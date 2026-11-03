@@ -26,7 +26,5 @@ Combine a real-time streaming pipeline with an AI agent: the stream detects an a
 - Detection accuracy on injected anomalies: true positives, false positives
 - Freshness: event time to alert time, p50/p95
 
-## Resume point to keep
-"Built real-time alert pipeline (Kafka/Flink) feeding a LangGraph agent that retrieves context and proposes root cause; alert-to-hypothesis in [X sec, benchmarked]."
 
 Note: keep the streaming path and the agent path separate — that separation is part of the design.
