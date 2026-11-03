@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StreamMind</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo"></span><h1>StreamMind</h1><span class="tag">real-time anomaly detection + root-cause agent</span></div>
+  <div class="status"><span id="live" class="pill off">connecting</span></div>
+</header>
+
+<main>
+  <section class="kpis" id="kpis"></section>
+
+  <section class="flow" id="flow"></section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Live service metrics</h2>
+      <div class="seg" id="metric-toggle">
+        <button data-m="rate" class="on">Request rate</button>
+        <button data-m="err">Error rate</button>
+        <button data-m="lat">Latency</button>
+      </div>
+      <div class="legend"><i class="lg band"></i>injected fault <i class="lg alert"></i>alert fired</div>
+    </div>
+    <div class="charts" id="charts"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><h2>Incidents</h2><span class="hint">agent output, human approval required before any action</span></div>
+    <div id="incidents" class="incidents"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

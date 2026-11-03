@@ -1,0 +1,5 @@
+fastapi==0.115.6
+uvicorn==0.34.0
+confluent-kafka==2.5.3
+redis==5.0.8
+httpx==0.27.2
